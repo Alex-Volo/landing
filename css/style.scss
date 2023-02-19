@@ -52,10 +52,6 @@
   padding-right: calc(50% - 584px);
 }
 
-.header:has(.header__heading) {
-  margin-top: 150px;
-}
-
 .header {
   text-align: center;
   height: 629px;
@@ -139,4 +135,10 @@
 
 .logo {
   margin: 0 16px;
+}
+
+.about {
+  background-color: #1d1d1d;
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 }
