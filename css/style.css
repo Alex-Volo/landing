@@ -2,37 +2,32 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: /*local("Roboto"),*/ url("../fonts/Roboto-Regular.ttf") format("truetype");
+  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "HelveticaNeueLTPro";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/HelveticaNeueLTProLt.otf");
+  src: url("../fonts/HelveticaNeueLTProLt.otf") format("opentype");
 }
-
 @font-face {
   font-family: "HelveticaNeueLTPro";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/HelveticaNeueLTProMd.otf");
+  src: url("../fonts/HelveticaNeueLTProMd.otf") format("opentype");
 }
-
 @font-face {
-  font-family: "HelveticaNeueLTProRoman";
+  font-family: "HelveticaNeueLTPro";
   font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/HelveticaNeueLTProRoman.otf");
+  font-weight: 400;
+  src: url("../fonts/HelveticaNeueLTProRoman.otf") format("opentype");
 }
-
 @font-face {
   font-family: "Merriweather";
   font-style: italic;
   font-weight: 300;
   src: url("../fonts/Merriweather-LightItalic.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -45,15 +40,83 @@
   font-weight: 400;
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 }
+.center {
+  padding-left: calc(50% - 584px);
+  padding-right: calc(50% - 584px);
+}
 
-.prob {
-  width: 200px;
-  height: 200px;
-  background-color: #454545;
-  font-weight: 400;
+.header:has(.header__heading) {
+  margin-top: 150px;
+}
+
+.header {
+  text-align: center;
+  height: 629px;
+}
+.header__heading {
+  margin: 0;
+  font-family: "HelveticaNeueLTPro";
+  font-size: 44px;
+  line-height: 44px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+}
+.header__info {
+  margin-top: 207px;
+}
+.header__lead {
+  margin-top: 8px;
+  font-family: Merriweather, serif;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  color: #898888;
+}
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 43px auto 0;
+  width: 188px;
+  height: 57px;
+  border: 1px solid black;
   font-family: Montserrat;
-  /* font-style: italic; */
-  /* font-weight: 300; */
-  /* font-family: HelveticaNeueLTPro; */
-  font-size: 32px;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav {
+  width: 620px;
+  margin: 0 auto;
+}
+
+.menu {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__item a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #989696;
+}
+.menu__item_active a {
+  color: #010101;
+}
+.logo {
+  margin: 0 16px;
 }/*# sourceMappingURL=style.css.map */
