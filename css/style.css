@@ -41,8 +41,8 @@
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 }
 .center {
-  padding-left: calc(50% - 584px);
-  padding-right: calc(50% - 584px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .header {
@@ -119,14 +119,46 @@
 }
 
 .about {
+  padding-top: 128px;
+  padding-bottom: 271px;
   background-color: #1d1d1d;
+  background: url(../img/buildings__white.png) center bottom repeat-x, url(../img/buildings__black.png) center calc(100% - 16px) repeat-x, #1d1d1d;
+}
+.about__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   gap: 178px;
+  padding-left: 94px;
+  padding-right: 94px;
 }
 .about__card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 27px;
   padding: 14px;
   color: #fefefe;
   max-width: 417px;
-  background-color: #000000;
+  height: 276px;
+  background-color: #181818;
+}
+.about__heading {
+  text-align: center;
+  margin: 0;
+  font-family: "Helvetica Neue Pro";
+  font-size: 48px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #fefefe;
+}
+.about__text {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #b7b7b7;
 }/*# sourceMappingURL=style.css.map */
