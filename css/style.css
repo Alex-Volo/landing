@@ -161,4 +161,38 @@
   font-weight: 300;
   letter-spacing: 0.02em;
   color: #b7b7b7;
+}
+
+.team {
+  background-color: #ffffff;
+  padding-top: 138px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+.team__heading {
+  margin: 0;
+  font-family: "HelveticaNeueLTPro";
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+}
+.team__lead {
+  margin-top: 13px;
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #898888;
+}
+.team__members {
+  display: flex;
+  justify-content: center;
+  gap: 232px;
+}
+.team__img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
